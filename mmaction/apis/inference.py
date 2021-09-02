@@ -153,5 +153,5 @@ def inference_recognizer(model,
 
     top5_label = score_sorted[:5]
     if outputs:
-        return top5_label, returned_features
-    return top5_label
+        return top5_label, returned_features, data
+    return top5_label, returned_features, data
